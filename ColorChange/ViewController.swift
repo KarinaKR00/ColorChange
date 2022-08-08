@@ -29,39 +29,39 @@ class ViewController: UIViewController {
         setupRedNumberLabel()
         
     }
-
+    
     @IBAction func actionRedSlider() {
         redNumberLabel.text = String(format: "%.2f", redSlider.value)
         colorChangeView.backgroundColor = UIColor(
             red: (CGFloat(redSlider.value)),
-                  green: (CGFloat(greenSlider.value)),
-                          blue: (CGFloat(blueSlider.value)),
+            green: (CGFloat(greenSlider.value)),
+            blue: (CGFloat(blueSlider.value)),
             alpha: (CGFloat(redSlider.value))
-                                 )
+        )
     }
     
     @IBAction func actionGreenSlider() {
         greenNumberLabel.text = String(format: "%.2f", greenSlider.value)
         colorChangeView.backgroundColor = UIColor(
             red: (CGFloat(redSlider.value)),
-                  green: (CGFloat(greenSlider.value)),
-                          blue: (CGFloat(blueSlider.value)),
+            green: (CGFloat(greenSlider.value)),
+            blue: (CGFloat(blueSlider.value)),
             alpha: (CGFloat(greenSlider.value))
-                                 )
+        )
     }
     
     @IBAction func actionBlueSlider() {
         blueNumberLabel.text = String(format: "%.2f", blueSlider.value)
         colorChangeView.backgroundColor = UIColor(
             red: (CGFloat(redSlider.value)),
-                  green: (CGFloat(greenSlider.value)),
-                          blue: (CGFloat(blueSlider.value)),
+            green: (CGFloat(greenSlider.value)),
+            blue: (CGFloat(blueSlider.value)),
             alpha: (CGFloat(blueSlider.value))
-                                 )
+        )
     }
-
-
-// MARK: - Private Methods
+    
+    
+    // MARK: - Private Methods
     
     private func changeColorRadius() {
         colorChangeView.layer.cornerRadius = 15
@@ -74,17 +74,17 @@ class ViewController: UIViewController {
         redNumberLabel.text = String(redSlider.value)
     }
     
-
+    
     
     // MARK: - Change Slider
     
     private func setupRedSlider() {
-    redSlider.value = 0
-    redSlider.minimumValue = 0
-    redSlider.maximumValue = 1
+        redSlider.value = 0
+        redSlider.minimumValue = 0
+        redSlider.maximumValue = 1
         
-    redSlider.minimumTrackTintColor = .red
-}
+        redSlider.minimumTrackTintColor = .red
+    }
     private func setupGreenSlider() {
         greenSlider.value = 0
         greenSlider.minimumValue = 0
